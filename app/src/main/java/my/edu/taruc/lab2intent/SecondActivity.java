@@ -14,12 +14,17 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         TextView textViewMessage;
+        
         textViewMessage = findViewById(R.id.textViewMsg);
 
-        //Retrieve intent data
-        Intent intent = getIntent(); //Who called me?
+
+        Intent intent = getIntent();
         if(intent.hasExtra(MainActivity.TAG_NAM)){
+
+
             String stringMsg = intent.getStringExtra(MainActivity.TAG_NAM);
+
+
             textViewMessage.setText(stringMsg);
         }
     }

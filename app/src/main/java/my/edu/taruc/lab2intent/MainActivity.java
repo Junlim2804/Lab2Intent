@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage(View view){
         String stringMsg;
         if(TextUtils.isEmpty(editTextMessage.getText())){
-            editTextMessage.setError("Please enter your message");
+            editTextMessage.setError("Please input your msg");
             return;
         }
         stringMsg = editTextMessage.getText().toString();
